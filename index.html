@@ -1,102 +1,97 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NCH Propreté - Services de nettoyage professionnels à Lyon">
-    <title>NCH Propreté</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background: #f8f9fb; color: #333; }
-        header { background: #1d3c6a; color: #fff; padding: 0; }
-        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 60px; }
-        .navbar .logo { font-size: 1.8em; font-weight: bold; letter-spacing: 1px; }
-        .navbar .nav-links { list-style: none; display: flex; gap: 30px; margin: 0; padding: 0; }
-        .navbar .nav-links li a { color: #fff; text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
-        .navbar .nav-links li a:hover { color: #a9c9ff; }
-        .hero { background: url('https://cdn.pixabay.com/photo/2017/09/21/14/57/cleaning-2771058_1280.jpg') center/cover no-repeat; color: #fff; padding: 120px 20px; text-align: center; }
-        .hero h1 { font-size: 3em; margin-bottom: 20px; }
-        .hero p { font-size: 1.3em; margin-bottom: 30px; }
-        .btn-primary { background: #1d3c6a; color: #fff; padding: 15px 30px; text-decoration: none; border-radius: 30px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.2); transition: background 0.3s ease; }
-        .btn-primary:hover { background: #2b5aa6; }
-        .services, .about, .contact { padding: 80px 20px; max-width: 1200px; margin: 0 auto; text-align: center; }
-        .services h2, .about h2, .contact h2 { color: #1d3c6a; font-size: 2.4em; margin-bottom: 20px; }
-        .service-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 50px; }
-        .service { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
-        .service:hover { transform: translateY(-5px); }
-        .service img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 20px; }
-        .contact-form { max-width: 600px; margin: 40px auto 0; text-align: left; }
-        .contact-form label { display: block; margin-bottom: 8px; font-weight: bold; color: #1d3c6a; }
-        .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px; font-size: 1em; }
-        .contact-form button { background: #1d3c6a; color: #fff; padding: 12px 25px; border: none; border-radius: 8px; font-size: 1em; cursor: pointer; transition: background 0.3s ease; }
-        .contact-form button:hover { background: #2b5aa6; }
-        footer { background: #1d3c6a; color: #fff; text-align: center; padding: 30px 10px; margin-top: 60px; font-size: 0.9em; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NCH Propreté - Services de nettoyage professionnels à Lyon" />
+  <title>NCH Propreté</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body{font-family:'Montserrat',sans-serif;margin:0;padding:0;background:#f8f9fb;color:#333}
+    header{background:#1d3c6a;color:#fff;padding:0}
+    .navbar{display:flex;justify-content:space-between;align-items:center;padding:20px 60px}
+    .logo{font-size:1.8em;font-weight:700;letter-spacing:1px}
+    .nav-links{list-style:none;display:flex;gap:30px;margin:0;padding:0}
+    .nav-links a{color:#fff;text-decoration:none;font-weight:500}
+    .hero{background:url('images/hero.jpg') center/cover no-repeat;color:#fff;padding:120px 20px;text-align:center}
+    .hero h1{font-size:3em;margin:0 0 20px}
+    .hero p{font-size:1.3em;margin:0 0 30px}
+    .btn-primary{background:#1d3c6a;color:#fff;padding:15px 30px;border-radius:30px;text-decoration:none;font-weight:700;display:inline-block}
+    .wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+    section{padding:80px 0;text-align:center}
+    h2{color:#1d3c6a;font-size:2.2em;margin:0 0 10px}
+    .service-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;margin-top:40px}
+    .service{background:#fff;padding:30px;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+    .service img{width:100%;height:200px;object-fit:cover;border-radius:10px;margin-bottom:15px}
+    .contact-form{max-width:600px;margin:40px auto 0;text-align:left}
+    .contact-form label{display:block;margin-bottom:8px;font-weight:700;color:#1d3c6a}
+    .contact-form input,.contact-form textarea{width:100%;padding:12px;margin-bottom:18px;border:1px solid #ccc;border-radius:8px;font-size:1em}
+    .contact-form button{background:#1d3c6a;color:#fff;padding:12px 25px;border:0;border-radius:8px;cursor:pointer}
+    footer{background:#1d3c6a;color:#fff;text-align:center;padding:30px 10px;margin-top:60px;font-size:.95em}
+  </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">NCH Propreté</div>
-            <ul class="nav-links">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <section class="hero">
-            <h1>Votre partenaire propreté au quotidien</h1>
-            <p>Des prestations de nettoyage professionnelles et adaptées à tous vos besoins.</p>
-            <a href="#contact" class="btn-primary">Demander un devis</a>
-        </section>
-    </header>
+  <header>
+    <nav class="navbar wrap">
+      <div class="logo">NCH Propreté</div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>Votre partenaire propreté au quotidien</h1>
+      <p>Des prestations de nettoyage professionnelles et adaptées à tous vos besoins.</p>
+      <a href="#contact" class="btn-primary">Demander un devis</a>
+    </section>
+  </header>
 
-    <main>
-        <section id="services" class="services">
-            <h2>Nos Services</h2>
-            <div class="service-list">
-                <div class="service">
-                    <img src="https://cdn.pixabay.com/photo/2016/03/27/21/16/window-cleaner-1281087_960_720.jpg" alt="Nettoyage vitres">
-                    <h3>Nettoyage de vitres</h3>
-                    <p>Des vitres impeccables grâce à un savoir-faire professionnel et sécurisé.</p>
-                </div>
-                <div class="service">
-                    <img src="https://cdn.pixabay.com/photo/2017/03/07/13/02/cleaning-2129483_960_720.jpg" alt="Nettoyage résidentiel">
-                    <h3>Nettoyage résidentiel</h3>
-                    <p>Entretien complet de maisons et appartements, ponctuel ou régulier.</p>
-                </div>
-                <div class="service">
-                    <img src="https://cdn.pixabay.com/photo/2017/02/24/09/15/cleaning-2098875_960_720.jpg" alt="Nettoyage bureaux">
-                    <h3>Nettoyage de bureaux</h3>
-                    <p>Locaux professionnels, bureaux et espaces communs parfaitement entretenus.</p>
-                </div>
-            </div>
-        </section>
+  <main class="wrap">
+    <section id="services">
+      <h2>Nos Services</h2>
+      <p>Vitres, résidentiel, bureaux — interventions ponctuelles ou régulières.</p>
+      <div class="service-list">
+        <article class="service">
+          <img src="images/vitres.jpg" alt="Nettoyage de vitres" />
+          <h3>Nettoyage de vitres</h3>
+          <p>Des vitres impeccables grâce à un savoir-faire professionnel sécurisé.</p>
+        </article>
+        <article class="service">
+          <img src="images/residentiel.jpg" alt="Nettoyage résidentiel" />
+          <h3>Nettoyage résidentiel</h3>
+          <p>Entretien complet de maisons et appartements, ponctuel ou régulier.</p>
+        </article>
+        <article class="service">
+          <img src="images/bureaux.jpg" alt="Nettoyage de bureaux" />
+          <h3>Nettoyage de bureaux</h3>
+          <p>Locaux professionnels et espaces communs parfaitement entretenus.</p>
+        </article>
+      </div>
+    </section>
 
-        <section id="about" class="about">
-            <h2>À propos</h2>
-            <p>NCH Propreté est une société lyonnaise spécialisée dans le nettoyage professionnel. Notre équipe expérimentée et équipée répond à toutes vos demandes avec rigueur et réactivité.</p>
-        </section>
+    <section id="about">
+      <h2>À propos</h2>
+      <p>NCH Propreté, société lyonnaise de nettoyage pro. Réactivité, rigueur et qualité.</p>
+    </section>
 
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <p>Pour toute demande de devis ou d'information, contactez-nous via le formulaire :</p>
-            <form class="contact-form" action="mailto:contact@nchproprete.com" method="post" enctype="text/plain">
-                <label for="name">Nom</label>
-                <input type="text" id="name" name="name" required>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Demandez votre devis via ce formulaire :</p>
+      <form class="contact-form" action="mailto:contact@nchproprete.com" method="post" enctype="text/plain">
+        <label for="name">Nom</label>
+        <input id="name" name="name" type="text" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Envoyer</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 NCH Propreté. Tous droits réservés.</p>
-    </footer>
+  <footer>
+    © 2025 NCH Propreté. Tous droits réservés.
+  </footer>
 </body>
 </html>
