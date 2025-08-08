@@ -1,61 +1,134 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NCH Propreté</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NCH Propreté – Nettoyage professionnel à Lyon</title>
+  <meta name="description" content="NCH Propreté : nettoyage résidentiel et professionnel, vitres, fin de chantier. Devis rapide et gratuit.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="logo-nch.png" alt="NCH Propreté" style="height:60px;">
-        <h1>NCH Propreté</h1>
-    </header>
+  <header>
+    <div class="wrap bar">
+      <div class="logo">
+        <img src="logo-nch.png" alt="NCH Propreté" />
+        <span>NCH Propreté</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact" class="btn btn-ghost">Contact</a></li>
+          <li><a href="#devis" class="btn btn-primary">Devis gratuit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#about">À propos</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="hero">
-        <img src="images/hero.jpg" alt="Nettoyage professionnel">
-        <h2>Votre partenaire propreté au service de vos espaces</h2>
-        <p>Des solutions de nettoyage efficaces et adaptées à vos besoins.</p>
-    </section>
-
-    <section id="services">
-        <h2>Nos Services</h2>
-        <div class="service">
-            <img src="images/maison.jpg" alt="Nettoyage maison">
-            <h3>Nettoyage de maisons et appartements</h3>
+  <section class="hero">
+    <div class="wrap grid-hero">
+      <div>
+        <span class="kicker">Entreprise de nettoyage à Lyon</span>
+        <h1>Votre partenaire propreté,<br> fiable & réactif</h1>
+        <p class="lead">Maisons, appartements, bureaux, vitres, fins de chantier. Interventions ponctuelles ou contrats d'entretien. Devis en 24h.</p>
+        <div class="hero-cta">
+          <a id="devis" href="#contact" class="btn btn-primary">Demander un devis</a>
+          <a href="#services" class="btn btn-ghost">Voir nos services</a>
         </div>
-        <div class="service">
-            <img src="images/bureau.jpg" alt="Nettoyage bureaux">
-            <h3>Entretien de bureaux et locaux professionnels</h3>
+      </div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop" alt="Sol propre et matériel de nettoyage"/>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2 class="title">Nos services</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="media"><img src="https://images.unsplash.com/photo-1598300183876-7c1af25f7b0d?q=80&w=1200&auto=format&fit=crop" alt="Nettoyage résidentiel"></div>
+          <div class="body">
+            <h3>Résidentiel</h3>
+            <p>Maisons & appartements : entretien régulier ou ponctuel.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="media"><img src="https://images.unsplash.com/photo-1538688423619-a81d3f23454b?q=80&w=1200&auto=format&fit=crop" alt="Nettoyage de bureaux"></div>
+          <div class="body">
+            <h3>Bureaux & locaux</h3>
+            <p>Entretien d'espaces professionnels, open-spaces et communs.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="media"><img src="https://images.unsplash.com/photo-1514809817624-57355df66db3?q=80&w=1200&auto=format&fit=crop" alt="Lavage de vitres"></div>
+          <div class="body">
+            <h3>Vitrerie</h3>
+            <p>Lavage de vitres et baies vitrées, intérieur/extérieur.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <h2 class="title">Comment ça marche</h2>
+      <div class="steps">
+        <div class="step"><b>1. Devis express</b><p>Vous décrivez votre besoin, on répond sous 24h.</p></div>
+        <div class="step"><b>2. Intervention</b><p>Créneau défini, protocole adapté, matériel pro.</p></div>
+        <div class="step"><b>3. Validation</b><p>Checklist de fin, facturation claire et sans surprise.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap inner">
+      <h3>Besoin d'un devis rapide ?</h3>
+      <a href="#contact" class="btn btn-primary" style="background:var(--accent)">Obtenir un devis</a>
+    </div>
+  </section>
+
+  <section id="contact" style="background:var(--muted)">
+    <div class="wrap contact">
+      <div>
+        <h2 class="title" style="text-align:left">Contact</h2>
+        <p>Pour toute question ou demande de devis, complétez le formulaire. Réponse sous 24h.</p>
+        <form action="mailto:contact@nchproprete.com" method="post" enctype="text/plain">
+          <label for="nom">Nom</label>
+          <input id="nom" name="nom" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <label for="tel">Téléphone</label>
+          <input id="tel" name="telephone" type="tel" placeholder="06 ...">
+          <label for="msg">Message</label>
+          <textarea id="msg" name="message" required></textarea>
+          <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+            <button class="btn btn-primary" type="submit">Envoyer</button>
+            <a class="btn btn-ghost" href="tel:+33782998062">ou appeler : 07 82 99 80 62</a>
+          </div>
+        </form>
+      </div>
+      <aside>
+        <div class="card" style="height:100%">
+          <div class="body">
+            <h3>Infos</h3>
+            <p><b>Zone :</b> Lyon et métropole</p>
+            <p><b>Email :</b> contact@nchproprete.com</p>
+            <p><b>Tél :</b> 07 82 99 80 62</p>
+            <p><b>Horaires :</b> sur rendez‑vous</p>
+          </div>
         </div>
-        <div class="service">
-            <img src="images/vitre.jpg" alt="Lavage de vitres">
-            <h3>Lavage de vitres</h3>
-        </div>
-    </section>
+      </aside>
+    </div>
+  </section>
 
-    <section id="about">
-        <h2>À propos</h2>
-        <p>
-            NCH Propreté est une société spécialisée dans le nettoyage professionnel : 
-            maisons, appartements, fins de chantier, cages d’escalier, locaux d’entreprise, vitres, voitures, etc.
-        </p>
-    </section>
-
-    <section id="contact">
-        <h2>Contactez-nous</h2>
-        <p>Email : contact@nchproprete.com</p>
-        <p>Téléphone : 07 82 99 80 62</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 NCH Propreté - Tous droits réservés</p>
-    </footer>
+  <footer>
+    <div class="wrap" style="display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap">
+      <div>© 2025 NCH Propreté — Tous droits réservés</div>
+      <div style="display:flex;gap:16px"><a href="#">Mentions légales</a><a href="#">Politique de confidentialité</a></div>
+    </div>
+  </footer>
 </body>
 </html>
