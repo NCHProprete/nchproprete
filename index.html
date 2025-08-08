@@ -12,15 +12,14 @@
   <header>
     <div class="wrap bar">
       <div class="logo">
-        <img src="logo-nch.png" alt="NCH Propreté" />
-        <span>NCH Propreté</span>
+        <img src="logo-nch.png" alt="NCH Propreté">
       </div>
       <nav>
         <ul>
           <li><a href="#services">Services</a></li>
           <li><a href="#process">Process</a></li>
           <li><a href="#contact" class="btn btn-ghost">Contact</a></li>
-          <li><a href="#devis" class="btn btn-primary">Devis gratuit</a></li>
+          <!-- bouton Devis gratuit retiré -->
         </ul>
       </nav>
     </div>
@@ -38,7 +37,7 @@
         </div>
       </div>
       <div class="hero-img">
-        <img src="https://img.freepik.com/photos-gratuite/portrait-homme-faisant-taches-menageres-participant-au-nettoyage-maison_23-2151468667.jpg" alt="Nettoyage d'un sol brillant"/>
+        <img src="https://img.freepik.com/photos-gratuite/portrait-homme-faisant-taches-menageres-participant-au-nettoyage-maison_23-2151468667.jpg" alt="Nettoyage d'un sol brillant">
       </div>
     </div>
   </section>
@@ -48,21 +47,27 @@
       <h2 class="title">Nos services</h2>
       <div class="cards">
         <article class="card">
-          <div class="media"><img src="https://img.freepik.com/photos-gratuite/portrait-homme-faisant-taches-menageres-participant-au-nettoyage-maison_23-2151468667.jpg" alt="Nettoyage résidentiel"></div>
+          <div class="media">
+            <img src="https://img.freepik.com/photos-gratuite/portrait-homme-faisant-taches-menageres-participant-au-nettoyage-maison_23-2151468667.jpg" alt="Nettoyage résidentiel">
+          </div>
           <div class="body">
             <h3>Résidentiel</h3>
             <p>Maisons & appartements : entretien régulier ou ponctuel.</p>
           </div>
         </article>
         <article class="card">
-          <div class="media"><img src="https://img.freepik.com/photos-gratuite/homme-faisant-service-nettoyage-domicile-professionnel_23-2150359028.jpg" alt="Nettoyage de bureaux"></div>
+          <div class="media">
+            <img src="images/bureaux.jpg" alt="Nettoyage de bureaux">
+          </div>
           <div class="body">
             <h3>Bureaux & locaux</h3>
             <p>Entretien d'espaces professionnels, open-spaces et communs.</p>
           </div>
         </article>
         <article class="card">
-          <div class="media"><img src="https://img.freepik.com/photos-gratuite/homme-faisant-service-nettoyage-domicile-professionnel_23-2150359028.jpg" alt="Lavage de vitres"></div>
+          <div class="media">
+            <img src="images/vitres.jpg" alt="Lavage de vitres">
+          </div>
           <div class="body">
             <h3>Vitrerie</h3>
             <p>Lavage de vitres et baies vitrées, intérieur/extérieur.</p>
@@ -95,29 +100,41 @@
       <div>
         <h2 class="title" style="text-align:left">Contact</h2>
         <p>Pour toute question ou demande de devis, complétez le formulaire. Réponse sous 24h.</p>
-        <form action="mailto:nchproprete@icloud.com" method="post" enctype="text/plain">
+
+        <!-- Formulaire envoi direct via FormSubmit -->
+        <form action="https://formsubmit.co/nchproprete@icloud.com" method="POST">
+          <input type="hidden" name="_subject" value="Demande de devis - NCH Propreté">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://www.nchproprete.com/#contact">
+
           <label for="nom">Nom</label>
-          <input id="nom" name="nom" required>
+          <input id="nom" name="Nom" required>
+
           <label for="email">Email</label>
-          <input id="email" name="email" type="email" required>
+          <input id="email" name="Email" type="email" required>
+
           <label for="tel">Téléphone</label>
-          <input id="tel" name="telephone" type="tel" placeholder="06 ...">
+          <input id="tel" name="Téléphone" type="tel" placeholder="06 ...">
+
           <label for="msg">Message</label>
-          <textarea id="msg" name="message" required></textarea>
+          <textarea id="msg" name="Message" required></textarea>
+
           <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
             <button class="btn btn-primary" type="submit">Envoyer</button>
             <a class="btn btn-ghost" href="tel:+33782998062">ou appeler : 07 82 99 80 62</a>
           </div>
         </form>
       </div>
+
       <aside>
         <div class="card" style="height:100%">
           <div class="body">
             <h3>Infos</h3>
-            <p><b>Zone :</b> Lyon et métropole</p>
+            <p><b>Zone :</b> Métropole lyonnaise & Rhône-Alpes</p>
             <p><b>Email :</b> nchproprete@icloud.com</p>
             <p><b>Tél :</b> 07 82 99 80 62</p>
-            <p><b>Horaires :</b> sur rendez‑vous</p>
+            <p><b>Horaires :</b> sur rendez-vous</p>
           </div>
         </div>
       </aside>
