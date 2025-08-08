@@ -92,3 +92,7 @@ footer a{color:#e8f4ff}
   #msg,.contact form .btn,.contact form .btn-ghost{grid-column:1}
   .cta .inner{flex-direction:column;text-align:center}
 }
+/* Logo plus grand et lisible */
+.logo img { height: 70px; width: auto; }
+/* Optionnel: header un poil plus haut */
+.bar { height: 76px; }
